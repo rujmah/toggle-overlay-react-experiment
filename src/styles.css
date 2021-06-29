@@ -1,0 +1,52 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+.dialog {
+  position: absolute;
+  top: 1rem;
+  width: 40vw;
+  height: 40vw;
+  background-color: antiquewhite;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-size: 18pt;
+  z-index: 1060;
+  right: -50vw;
+
+  transition: all 500ms ease-in-out;
+}
+
+.dialog-transform {
+  right: 1rem;
+}
+
+.dialog-content {
+  padding: 2rem 0.2rem 0.2rem 0.3rem;
+}
+
+.close {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin: 0.25rem;
+  background-color: transparent;
+  border: none;
+  font-size: 20pt;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
